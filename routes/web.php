@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome.welcome');
-});
+Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
+Route::get('/view_product', [WelcomeController::class, 'view_product'])->name('view_product');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

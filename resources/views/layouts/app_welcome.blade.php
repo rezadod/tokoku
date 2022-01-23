@@ -29,6 +29,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Licorice">
 
+    @stack('add_script_top')
+
     <style>
         body {
             font-family: Licorice;
@@ -308,6 +310,8 @@
         }
 
     </script>
+
+    @stack('add_script_bottom')
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 @extends('layouts/app_welcome')
 @section('container')
+
     {{-- CAROUSEL --}}
     <div class="relative flex justify-center bg-gray-100 items-top dark:bg-gray-900 sm:items-center sm:pt-0">
         <div class="bg-white">
@@ -46,7 +47,7 @@
     <div class="container mx-auto px-14">
         <div class="flex flex-wrap -mx-4 ">
             <div class="w-full xs:w-1/2 sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
-                <a href="" class="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                <a href="{{route('view_product')}}" class="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                     <div class="relative pb-48 overflow-hidden">
                         <img class="absolute inset-0 h-full w-full object-cover"
                             src="https://images.unsplash.com/photo-1611235115922-72aece5cf686?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
